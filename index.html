@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSV アップロードと表示</title>
+</head>
+<body>
+    <h2>CSV アップロード</h2>
+    <input type="file" id="csvFileInput" accept=".csv" />
+    <table id="outputTable" border="1"></table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script>
+        document.getElementById('csvFileInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            
+            Papa.parse(file, {
+                complete: function(results) {
+                    const data = results.data;
+                    const table = document.getElementById('outputTable');
+                    table.innerHTML = "";
+                    
+                    data.forEach((row) => {
+                        const tr = document.createElement('tr');
+                        row.forEach((cell) => {
+                            const td = document.createElement('td');
+                            td.textContent = cell;
+                            tr.appendChild(td);
+                        });
+                        table.appendChild(tr);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
