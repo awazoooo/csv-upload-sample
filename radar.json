@@ -176,7 +176,7 @@
     },
     "Arkadia": {
         "ANOTHER": {
-            "ALL_NOTES": 0,
+            "ALL_NOTES": 1873,
             "RADAR": {
                 "NOTES": 152.15
             }
@@ -580,7 +580,7 @@
     },
     "Double Dribble": {
         "ANOTHER": {
-            "ALL_NOTES": 0,
+            "ALL_NOTES": 1683,
             "RADAR": {
                 "SCRATCH": 151.27
             }
@@ -1635,7 +1635,7 @@
     },
     "Snakey Kung-fu": {
         "ANOTHER": {
-            "ALL_NOTES": 0,
+            "ALL_NOTES": 1751,
             "RADAR": {
                 "CHARGE": 175.66
             }
