@@ -1,15 +1,28 @@
 <template>
   <div class="card">
     <div class="card-header">
-      <span class="value">{{ data.value }}</span>
+      <div class="value-container">
+        <span class="value-label">レーダー値</span>
+        <span class="value">{{ data.value }}</span>
+      </div>
       <span class="difficulty" :class="difficultyClass">{{ data.difficulty }}</span>
     </div>
     <div class="card-body">
       <h3 class="music-name">{{ data.name }}</h3>
-      <div class="score-info">
-        <span class="score">{{ data.score }}/{{ data.maxScore }}</span>
-        <span class="score-rate">{{ formatScoreRate(data.scoreRate) }}%</span>
-        <span class="rank" :class="rankClass">{{ data.rank }}</span>
+      <div class="score-details">
+        <div class="score-bar">
+          <div
+            class="score-progress"
+            :style="{ width: formatScoreRate(data.scoreRate) + '%' }"
+          ></div>
+        </div>
+        <div class="score-info">
+          <div class="score-numbers">
+            <span class="score">{{ data.score }}/{{ data.maxScore }}</span>
+            <span class="score-rate">{{ formatScoreRate(data.scoreRate) }}%</span>
+          </div>
+          <span class="rank" :class="rankClass">{{ data.rank }}</span>
+        </div>
       </div>
     </div>
   </div>
@@ -66,112 +79,157 @@ const formatScoreRate = (scoreRate: string) => {
 <style scoped>
 .card {
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
   overflow: hidden;
   transition:
-    transform 0.2s,
-    box-shadow 0.2s;
+    transform 0.3s,
+    box-shadow 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .card-header {
-  padding: 12px 16px;
-  background: #f8f9fa;
+  padding: 14px 18px;
+  background: linear-gradient(to right, #f8f9fa, #f0f2f5);
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #eee;
 }
 
+.value-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.value-label {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 2px;
+}
+
 .value {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   color: #333;
+  background: linear-gradient(45deg, #4a6cf7, #6a3ef5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .difficulty {
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
 }
 
 .normal {
-  background: #4caf50;
+  background: linear-gradient(to right, #4caf50, #43a047);
   color: white;
 }
 
 .hyper {
-  background: #ff9800;
+  background: linear-gradient(to right, #ff9800, #f57c00);
   color: white;
 }
 
 .another {
-  background: #f44336;
+  background: linear-gradient(to right, #f44336, #e53935);
   color: white;
 }
 
 .leggendaria {
-  background: #9c27b0;
+  background: linear-gradient(to right, #9c27b0, #8e24aa);
   color: white;
 }
 
 .card-body {
-  padding: 16px;
+  padding: 18px;
 }
 
 .music-name {
-  margin: 0 0 8px 0;
-  font-size: 1.1rem;
+  margin: 0 0 12px 0;
+  font-size: 1.15rem;
   color: #333;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.score-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.score-bar {
+  height: 8px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.score-progress {
+  height: 100%;
+  background: linear-gradient(to right, #4a6cf7, #6a3ef5);
+  border-radius: 4px;
+  transition: width 0.5s ease-out;
 }
 
 .score-info {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
   font-size: 0.9rem;
 }
 
+.score-numbers {
+  display: flex;
+  gap: 12px;
+}
+
 .score {
-  color: #555;
+  color: #666;
 }
 
 .score-rate {
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
 }
 
 .rank {
-  padding: 2px 6px;
+  padding: 3px 8px;
   border-radius: 4px;
   font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .rank-aaa {
-  background: #ffd700;
+  background: linear-gradient(to right, #ffd700, #ffca28);
   color: #333;
 }
 
 .rank-aa {
-  background: #c0c0c0;
+  background: linear-gradient(to right, #c0c0c0, #b0b0b0);
   color: #333;
 }
 
 .rank-a {
-  background: #cd7f32;
+  background: linear-gradient(to right, #cd7f32, #bf6c24);
   color: white;
 }
 
 .rank-b {
-  background: #4a6cf7;
+  background: linear-gradient(to right, #4a6cf7, #3a5ce5);
   color: white;
 }
 
@@ -179,7 +237,7 @@ const formatScoreRate = (scoreRate: string) => {
 .rank-d,
 .rank-e,
 .rank-f {
-  background: #666;
+  background: linear-gradient(to right, #666, #555);
   color: white;
 }
 </style>

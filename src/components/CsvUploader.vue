@@ -1,16 +1,48 @@
 <template>
   <div class="csv-uploader">
-    <label for="csvInput" class="file-input-label">
-      <span>CSVファイルを選択</span>
-      <input
-        type="file"
-        id="csvInput"
-        accept=".csv"
-        @change="handleFileUpload"
-        class="file-input"
-      />
-    </label>
-    <p v-if="isLoading" class="loading-message">ファイルを処理中...</p>
+    <div
+      class="upload-area"
+      :class="{ 'is-dragging': isDragging }"
+      @dragover.prevent="isDragging = true"
+      @dragleave.prevent="isDragging = false"
+      @drop.prevent="handleFileDrop"
+    >
+      <div class="upload-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="17 8 12 3 7 8"></polyline>
+          <line x1="12" y1="3" x2="12" y2="15"></line>
+        </svg>
+      </div>
+      <div class="upload-text">
+        <p>CSVファイルをドラッグ＆ドロップ</p>
+        <p>または</p>
+      </div>
+      <label for="csvInput" class="file-input-label">
+        <span>ファイルを選択</span>
+        <input
+          type="file"
+          id="csvInput"
+          accept=".csv"
+          @change="handleFileUpload"
+          class="file-input"
+        />
+      </label>
+    </div>
+    <div v-if="isLoading" class="loading-container">
+      <div class="loading-spinner"></div>
+      <p class="loading-message">ファイルを処理中...</p>
+    </div>
   </div>
 </template>
 
@@ -20,6 +52,7 @@ import Papa from 'papaparse'
 import type { CSVRow, MusicMasterData, CandidatesData } from '@/types'
 
 const isLoading = ref(false)
+const isDragging = ref(false)
 
 const emit = defineEmits<{
   (e: 'data-processed', candidates: CandidatesData): void
@@ -32,7 +65,7 @@ const musicMasterData = ref<MusicMasterData>({})
 const fetchMasterData = async () => {
   try {
     const response = await fetch(
-      'https://raw.githubusercontent.com/awazoooo/csv-upload-sample/refs/heads/main/radar.json',
+      'https://raw.githubusercontent.com/awazoooo/csv-upload-sample/refs/heads/main/public/radar.json',
     )
     if (!response.ok) {
       throw new Error('HTTPエラー: ' + response.status)
@@ -46,13 +79,29 @@ const fetchMasterData = async () => {
 // コンポーネントのマウント時にマスターデータを取得
 fetchMasterData()
 
+// ドラッグ＆ドロップでのファイルアップロード処理
+const handleFileDrop = (event: DragEvent) => {
+  isDragging.value = false
+  const files = event.dataTransfer?.files
+  if (files && files.length > 0) {
+    const file = files[0]
+    if (file.type === 'text/csv' || file.name.endsWith('.csv')) {
+      parseCSV(file)
+    }
+  }
+}
+
 // CSVファイルのアップロード処理
 const handleFileUpload = (event: Event) => {
   const input = event.target as HTMLInputElement
   const file = input.files?.[0]
 
   if (!file) return
+  parseCSV(file)
+}
 
+// CSVファイルのパース処理
+const parseCSV = (file: File) => {
   isLoading.value = true
   console.log('Start loading file...')
 
@@ -137,6 +186,47 @@ const processData = (data: CSVRow[]) => {
   align-items: center;
 }
 
+.upload-area {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.upload-area:hover {
+  border-color: #4a6cf7;
+  background-color: #f5f7ff;
+}
+
+.is-dragging {
+  border-color: #4a6cf7;
+  background-color: #f0f4ff;
+  box-shadow: 0 0 15px rgba(74, 108, 247, 0.2);
+}
+
+.upload-icon {
+  color: #4a6cf7;
+  margin-bottom: 15px;
+}
+
+.upload-text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.upload-text p {
+  margin: 5px 0;
+  color: #666;
+}
+
 .file-input-label {
   display: inline-block;
   padding: 12px 24px;
@@ -146,18 +236,44 @@ const processData = (data: CSVRow[]) => {
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(74, 108, 247, 0.2);
 }
 
 .file-input-label:hover {
   background: #3a5ce5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(74, 108, 247, 0.25);
 }
 
 .file-input {
   display: none;
 }
 
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.loading-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(74, 108, 247, 0.3);
+  border-radius: 50%;
+  border-top-color: #4a6cf7;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
 .loading-message {
-  margin-top: 10px;
   color: #666;
+  font-weight: 500;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 </style>
