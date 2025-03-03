@@ -103,14 +103,12 @@ const handleFileUpload = (event: Event) => {
 // CSVファイルのパース処理
 const parseCSV = (file: File) => {
   isLoading.value = true
-  console.log('Start loading file...')
 
   Papa.parse(file, {
     header: true,
     complete: (results) => {
       processData(results.data as CSVRow[])
       isLoading.value = false
-      console.log('Finished loading file!!!')
     },
     error: (error) => {
       console.error('CSVパースエラー:', error)
