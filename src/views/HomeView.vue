@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <div class="header">
-      <h1>CSV Viewer</h1>
-      <p class="subtitle">IIDXスコアデータ分析ツール</p>
+      <h1>IIDX Notes Radar Viewer</h1>
+      <p class="subtitle">IIDX ノーツレーダー値確認ツール</p>
     </div>
 
     <CsvUploader @data-processed="handleDataProcessed" />
@@ -17,6 +17,9 @@
         <div v-else class="cards-container">
           <MusicDataCard v-for="(item, index) in currentTabData" :key="index" :data="item" />
         </div>
+        <p class="footer">
+          本サイトは、株式会社コナミデジタルエンタテインメントとは一切関係の無い個人が製作した非公式ファンサイトです。
+        </p>
       </div>
     </div>
 
@@ -39,10 +42,8 @@
           <line x1="9" y1="15" x2="15" y2="15"></line>
         </svg>
       </div>
-      <p>CSVをアップロードしてデータを表示</p>
-      <p class="empty-hint">
-        スコアデータをアップロードすると、レーダー値ごとの最適な曲が表示されます
-      </p>
+      <p>CSVファイルをアップロードしてデータを表示</p>
+      <p class="empty-hint">CSVファイルをアップロードすると、各曲ごとのレーダー値が表示されます</p>
     </div>
   </div>
 </template>
@@ -158,6 +159,13 @@ h1 {
   text-align: center;
   padding: 40px 0;
   color: #666;
+}
+
+.footer {
+  text-align: left;
+  padding: 40px 0;
+  color: #666;
+  font-size: 0.7rem;
 }
 
 .cards-container {
