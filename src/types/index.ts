@@ -8,6 +8,8 @@ export interface MusicData {
   scoreRate: string
   totalNotes?: number
   value: string
+  isExcluded?: boolean
+  isTopTen?: boolean
 }
 
 export interface MusicMasterData {
@@ -33,6 +35,15 @@ export interface CandidatesData {
   CHARGE: MusicData[]
   SCRATCH: MusicData[]
   'SOF-RAN': MusicData[]
+}
+
+export interface RadarAverageValues {
+  NOTES: string
+  CHORD: string
+  PEAK: string
+  CHARGE: string
+  SCRATCH: string
+  'SOF-RAN': string
 }
 
 export interface CSVRow {

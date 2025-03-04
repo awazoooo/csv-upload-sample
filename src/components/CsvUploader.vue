@@ -49,13 +49,19 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import Papa from 'papaparse'
-import type { CSVRow, MusicMasterData, CandidatesData } from '@/types'
+import type {
+  CSVRow,
+  MusicMasterData,
+  CandidatesData,
+  MusicData,
+  RadarAverageValues,
+} from '@/types'
 
 const isLoading = ref(false)
 const isDragging = ref(false)
 
 const emit = defineEmits<{
-  (e: 'data-processed', candidates: CandidatesData): void
+  (e: 'data-processed', candidates: CandidatesData, averageValues: RadarAverageValues): void
 }>()
 
 // レーダー値のマスターデータ
@@ -119,6 +125,21 @@ const parseCSV = (file: File) => {
 
 // CSVデータの処理
 const processData = (data: CSVRow[]) => {
+  // 一時的なデータ保存用
+  const tempData: {
+    [kind: string]: {
+      [musicName: string]: MusicData[]
+    }
+  } = {
+    NOTES: {},
+    CHORD: {},
+    PEAK: {},
+    CHARGE: {},
+    SCRATCH: {},
+    'SOF-RAN': {},
+  }
+
+  // 最終的な候補データ
   const candidates: CandidatesData = {
     NOTES: [],
     CHORD: [],
@@ -128,6 +149,7 @@ const processData = (data: CSVRow[]) => {
     'SOF-RAN': [],
   }
 
+  // 各曲の各難易度のデータを収集
   for (const row of data) {
     const musicName = row['タイトル']
     for (const difficulty of ['NORMAL', 'HYPER', 'ANOTHER', 'LEGGENDARIA']) {
@@ -150,7 +172,12 @@ const processData = (data: CSVRow[]) => {
 
         if (!radarValue) continue
 
-        candidates[kind].push({
+        // 曲名ごとにデータを一時保存
+        if (!tempData[kind][musicName]) {
+          tempData[kind][musicName] = []
+        }
+
+        tempData[kind][musicName].push({
           difficulty,
           difficultyNumber,
           maxScore,
@@ -160,19 +187,64 @@ const processData = (data: CSVRow[]) => {
           scoreRate,
           totalNotes: musicData['ALL_NOTES'],
           value: (radarValue * parseFloat(scoreRate)).toFixed(2),
+          isExcluded: false, // 除外フラグ（初期値はfalse）
         })
       }
     }
   }
 
-  // レーダー値の降順ソート
-  for (const kind in candidates) {
-    candidates[kind as keyof CandidatesData].sort(
-      (a, b) => parseFloat(b.value) - parseFloat(a.value),
-    )
+  // 各種別ごとに、同一曲名の曲から最大のレーダー値を持つ難易度のみを選択
+  for (const kind in tempData) {
+    const kindKey = kind as keyof typeof tempData
+
+    for (const musicName in tempData[kindKey]) {
+      // 同一曲名の曲をレーダー値の降順でソート
+      tempData[kindKey][musicName].sort((a, b) => parseFloat(b.value) - parseFloat(a.value))
+
+      // 最大のレーダー値を持つ難易度を候補に追加
+      candidates[kindKey as keyof CandidatesData].push(tempData[kindKey][musicName][0])
+
+      // 残りの難易度は除外フラグを立てて候補に追加
+      for (let i = 1; i < tempData[kindKey][musicName].length; i++) {
+        const excludedData = { ...tempData[kindKey][musicName][i], isExcluded: true }
+        candidates[kindKey as keyof CandidatesData].push(excludedData)
+      }
+    }
   }
 
-  emit('data-processed', candidates)
+  // 平均値を保存するオブジェクト
+  const averageValues: RadarAverageValues = {
+    NOTES: '0',
+    CHORD: '0',
+    PEAK: '0',
+    CHARGE: '0',
+    SCRATCH: '0',
+    'SOF-RAN': '0',
+  }
+
+  // 各種別ごとにレーダー値の降順でソート
+  for (const kind in candidates) {
+    const kindKey = kind as keyof CandidatesData
+    candidates[kindKey].sort((a, b) => {
+      // レーダー値で降順ソート
+      return parseFloat(b.value) - parseFloat(a.value)
+    })
+
+    // 各種別の上位10曲（除外されていない曲のみ）の平均レーダー値を計算
+    const topTen = candidates[kindKey].filter((item) => !item.isExcluded).slice(0, 10)
+
+    if (topTen.length > 0) {
+      const avgValue = topTen.reduce((sum, item) => sum + parseFloat(item.value), 0) / topTen.length
+      averageValues[kindKey] = avgValue.toFixed(2)
+
+      // 上位10曲にフラグを設定
+      topTen.forEach((item) => {
+        item.isTopTen = true
+      })
+    }
+  }
+
+  emit('data-processed', candidates, averageValues)
 }
 </script>
 
@@ -262,16 +334,5 @@ const processData = (data: CSVRow[]) => {
   border-top-color: #4a6cf7;
   animation: spin 1s linear infinite;
   margin-bottom: 10px;
-}
-
-.loading-message {
-  color: #666;
-  font-weight: 500;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
 }
 </style>

@@ -14,8 +14,23 @@
         <div v-if="currentTabData.length === 0" class="no-data">
           <p>データがありません。</p>
         </div>
-        <div v-else class="cards-container">
-          <MusicDataCard v-for="(item, index) in currentTabData" :key="index" :data="item" />
+        <div v-else>
+          <!-- 平均レーダー値の表示 -->
+          <div class="average-radar-container">
+            <div class="average-radar-card">
+              <h3>{{ currentTab }} 平均レーダー値</h3>
+              <div class="average-value">{{ currentTabAverage }}</div>
+              <p class="average-description">
+                ※ レーダー値が大きい 10 曲（同一曲名は最大の 1 難易度のみ）の平均値
+              </p>
+            </div>
+          </div>
+
+          <!-- 全曲の表示 -->
+          <h3 class="section-title">曲一覧</h3>
+          <div class="cards-container">
+            <MusicDataCard v-for="(item, index) in currentTabData" :key="index" :data="item" />
+          </div>
         </div>
         <p class="footer">
           本サイトは、株式会社コナミデジタルエンタテインメントとは一切関係の無い個人が製作した非公式ファンサイトです。
@@ -53,7 +68,7 @@ import { ref, computed } from 'vue'
 import CsvUploader from '@/components/CsvUploader.vue'
 import TabSelector from '@/components/TabSelector.vue'
 import MusicDataCard from '@/components/MusicDataCard.vue'
-import type { CandidatesData } from '@/types'
+import type { CandidatesData, RadarAverageValues } from '@/types'
 
 // データの状態
 const candidates = ref<CandidatesData>({
@@ -63,6 +78,16 @@ const candidates = ref<CandidatesData>({
   CHARGE: [],
   SCRATCH: [],
   'SOF-RAN': [],
+})
+
+// レーダー平均値
+const averageValues = ref<RadarAverageValues>({
+  NOTES: '0',
+  CHORD: '0',
+  PEAK: '0',
+  CHARGE: '0',
+  SCRATCH: '0',
+  'SOF-RAN': '0',
 })
 
 // 現在選択されているタブ
@@ -78,9 +103,15 @@ const currentTabData = computed(() => {
   return candidates.value[currentTab.value as keyof CandidatesData]
 })
 
+// 現在のタブの平均レーダー値
+const currentTabAverage = computed(() => {
+  return averageValues.value[currentTab.value as keyof RadarAverageValues]
+})
+
 // CSVデータが処理されたときのハンドラ
-const handleDataProcessed = (data: CandidatesData) => {
+const handleDataProcessed = (data: CandidatesData, avgValues: RadarAverageValues) => {
   candidates.value = data
+  averageValues.value = avgValues
 }
 </script>
 
@@ -172,6 +203,60 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  margin: 30px 0 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.excluded-title {
+  color: #f57c00;
+}
+
+.other-title {
+  color: #666;
+}
+
+.excluded-cards .card {
+  opacity: 0.7;
+  border-left: 3px solid #f57c00;
+}
+
+.average-radar-container {
+  margin: 20px 0 30px;
+}
+
+.average-radar-card {
+  background: linear-gradient(to right, #4a6cf7, #6a3ef5);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(74, 108, 247, 0.2);
+}
+
+.average-radar-card h3 {
+  margin: 0 0 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.average-value {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 10px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.average-description {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin: 10px 0 0;
 }
 
 @keyframes fadeIn {

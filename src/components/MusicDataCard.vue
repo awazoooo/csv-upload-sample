@@ -1,11 +1,15 @@
 <template>
-  <div class="card">
+  <div class="card" :class="{ 'top-ten': data.isTopTen, excluded: data.isExcluded }">
     <div class="card-header">
       <div class="value-container">
         <span class="value-label">レーダー値</span>
         <span class="value">{{ data.value }}</span>
       </div>
-      <span class="difficulty" :class="difficultyClass">{{ data.difficulty }}</span>
+      <div class="right-header">
+        <span v-if="data.isTopTen" class="top-ten-badge">TOP 10</span>
+        <span v-if="data.isExcluded" class="excluded-badge">同一曲除外</span>
+        <span class="difficulty" :class="difficultyClass">{{ data.difficulty }}</span>
+      </div>
     </div>
     <div class="card-body">
       <h3 class="music-name">{{ data.name }}</h3>
@@ -92,6 +96,26 @@ const formatScoreRate = (scoreRate: string) => {
 .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* 対象外曲のスタイル */
+.excluded {
+  background: #f0f0f0;
+  opacity: 0.8;
+}
+
+.excluded .card-header {
+  background: linear-gradient(to right, #e8e8e8, #e0e0e0);
+}
+
+.excluded .card-body {
+  background: #f5f5f5;
+}
+
+/* TOP 10曲のスタイル */
+.top-ten {
+  border-left: 3px solid #4a6cf7;
+  box-shadow: 0 3px 15px rgba(74, 108, 247, 0.15);
 }
 
 .card-header {
@@ -238,6 +262,32 @@ const formatScoreRate = (scoreRate: string) => {
 .rank-e,
 .rank-f {
   background: linear-gradient(to right, #666, #555);
+  color: white;
+}
+
+/* バッジのスタイル */
+.right-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-ten-badge,
+.excluded-badge {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.top-ten-badge {
+  background: linear-gradient(to right, #4a6cf7, #6a3ef5);
+  color: white;
+}
+
+.excluded-badge {
+  background: linear-gradient(to right, #f57c00, #ff9800);
   color: white;
 }
 </style>
