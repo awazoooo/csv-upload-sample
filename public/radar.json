@@ -157,7 +157,7 @@
       }
     },
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1780,
       "RADAR": {
         "NOTES": 137.79
       }
@@ -177,12 +177,6 @@
       "ALL_NOTES": 1888,
       "RADAR": {
         "NOTES": 150.49
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.21
       }
     }
   },
@@ -212,7 +206,7 @@
       }
     },
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1810,
       "RADAR": {
         "NOTES": 141.23
       }
@@ -373,12 +367,6 @@
         "CHORD": 193.81,
         "NOTES": 178.95
       }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.06
-      }
     }
   },
   "CONTRACT": {
@@ -426,7 +414,7 @@
       }
     },
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1739,
       "RADAR": {
         "NOTES": 143.79
       }
@@ -557,12 +545,6 @@
         "NOTES": 165.51,
         "PEAK": 171.44
       }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.04
-      }
     }
   },
   "Deep Sea Mystery": {
@@ -650,7 +632,7 @@
       }
     },
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1520,
       "RADAR": {
         "NOTES": 146.61
       }
@@ -699,12 +681,6 @@
         "CHORD": 162.15,
         "NOTES": 163.57,
         "PEAK": 160.72
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.17
       }
     }
   },
@@ -791,7 +767,7 @@
       }
     },
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1830,
       "RADAR": {
         "NOTES": 145.34
       }
@@ -1082,7 +1058,7 @@
       }
     },
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1639,
       "RADAR": {
         "NOTES": 139.51
       }
@@ -1378,12 +1354,6 @@
       "RADAR": {
         "SCRATCH": 151.76
       }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.87
-      }
     }
   },
   "Phoenix": {
@@ -1428,12 +1398,6 @@
       "RADAR": {
         "CHARGE": 179.25,
         "NOTES": 159.16
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.35
       }
     }
   },
@@ -1606,12 +1570,6 @@
       "RADAR": {
         "PEAK": 155.35
       }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.36
-      }
     }
   },
   "Secrets": {
@@ -1620,12 +1578,6 @@
       "RADAR": {
         "CHORD": 183.19,
         "NOTES": 171.47
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.32
       }
     }
   },
@@ -1781,12 +1733,6 @@
       "RADAR": {
         "CHORD": 160.7
       }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.12
-      }
     }
   },
   "THE F∀UST": {
@@ -1845,12 +1791,6 @@
         "NOTES": 162.41,
         "PEAK": 157.15
       }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.04
-      }
     }
   },
   "TRIUMPH": {
@@ -1892,12 +1832,6 @@
         "NOTES": 171.61,
         "PEAK": 200
       }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.64
-      }
     }
   },
   "Theory": {
@@ -1937,7 +1871,7 @@
       }
     },
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1458,
       "RADAR": {
         "NOTES": 121.01
       }
@@ -2030,12 +1964,6 @@
         "CHORD": 169.12,
         "NOTES": 182.74,
         "PEAK": 160.72
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.15
       }
     }
   },
@@ -2322,7 +2250,9 @@
     "ANOTHER": {
       "ALL_NOTES": 1509,
       "RADAR": {
-        "CHORD": 155.5
+        "NOTES": 143.08,
+        "CHORD": 155.5,
+        "PEAK": 134.22
       }
     }
   },
@@ -2486,7 +2416,7 @@
       }
     },
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1457,
       "RADAR": {
         "NOTES": 122.23
       }
@@ -2505,12 +2435,6 @@
       "ALL_NOTES": 1655,
       "RADAR": {
         "NOTES": 164.24
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.64
       }
     }
   },
@@ -2805,12 +2729,6 @@
         "NOTES": 168.08,
         "PEAK": 178.56
       }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.08
-      }
     }
   },
   "卑弥呼": {
@@ -2858,7 +2776,7 @@
       }
     },
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1835,
       "RADAR": {
         "NOTES": 142.09
       }
@@ -3091,12 +3009,6 @@
         "NOTES": 154.3,
         "PEAK": 182.14
       }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.38
-      }
     }
   },
   "真 地獄超特急 -HELL or HELL-": {
@@ -3197,7 +3109,7 @@
       }
     },
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1815,
       "RADAR": {
         "NOTES": 142.25
       }
@@ -3283,17 +3195,11 @@
         "CHARGE": 162.81,
         "NOTES": 154.97
       }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.71
-      }
     }
   },
   "255": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1676,
       "RADAR": {
         "NOTES": 149.2
       }
@@ -3301,7 +3207,7 @@
   },
   "Xb10r": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1833,
       "RADAR": {
         "NOTES": 149.75
       }
@@ -3309,7 +3215,7 @@
   },
   "Nothing but Theory": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1890,
       "RADAR": {
         "NOTES": 149.73
       }
@@ -3317,7 +3223,7 @@
   },
   "2 Beasts Unchained": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1780,
       "RADAR": {
         "NOTES": 149.72
       }
@@ -3325,7 +3231,7 @@
   },
   "THE DAY OF JUBILATIONS": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1757,
       "RADAR": {
         "NOTES": 149.33
       }
@@ -3333,7 +3239,7 @@
   },
   "quell〜the seventh slave〜": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1646,
       "RADAR": {
         "NOTES": 149.2
       }
@@ -3341,7 +3247,7 @@
   },
   "Visterhv": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1869,
       "RADAR": {
         "NOTES": 149
       }
@@ -3349,7 +3255,7 @@
   },
   "Session 9 -Chronicles-": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1852,
       "RADAR": {
         "NOTES": 148.91
       }
@@ -3357,7 +3263,7 @@
   },
   "Vermilion Carol": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1837,
       "RADAR": {
         "NOTES": 148.8
       }
@@ -3365,7 +3271,7 @@
   },
   "AA -rebuild-": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1820,
       "RADAR": {
         "NOTES": 148.7
       }
@@ -3373,7 +3279,7 @@
   },
   "Macuilxochitl": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1677,
       "RADAR": {
         "NOTES": 148.56
       }
@@ -3381,7 +3287,7 @@
   },
   "B.O.D.Y.": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1734,
       "RADAR": {
         "NOTES": 148.27
       }
@@ -3389,7 +3295,7 @@
   },
   "entelecheia": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1657,
       "RADAR": {
         "NOTES": 148.21
       }
@@ -3397,7 +3303,7 @@
   },
   "即席！脳直★ミュージックシステム": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1838,
       "RADAR": {
         "NOTES": 148.19
       }
@@ -3405,7 +3311,7 @@
   },
   "Drastic Dramatic": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1765,
       "RADAR": {
         "NOTES": 147.76
       }
@@ -3413,7 +3319,7 @@
   },
   "LOUDER ROLLING THUNDER": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1767,
       "RADAR": {
         "NOTES": 147.64
       }
@@ -3421,7 +3327,7 @@
   },
   "EVANESCENT": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1845,
       "RADAR": {
         "NOTES": 147.52
       }
@@ -3429,21 +3335,15 @@
   },
   "Kung-fu Empire": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1999,
       "RADAR": {
         "NOTES": 147.48
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.25
       }
     }
   },
   "Tiempo Loco": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1884,
       "RADAR": {
         "NOTES": 147.39
       }
@@ -3451,7 +3351,7 @@
   },
   "STARLIGHT DANCEHALL": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1712,
       "RADAR": {
         "NOTES": 147.37
       }
@@ -3459,21 +3359,15 @@
   },
   "ΕΛΠΙΣ": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1852,
       "RADAR": {
         "NOTES": 147.12
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.08
       }
     }
   },
   "ASIAN VIRTUAL REALITIES (MELTING TOGETHER IN DAZZLING DARKNESS)": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1752,
       "RADAR": {
         "NOTES": 147.05
       }
@@ -3481,7 +3375,7 @@
   },
   "華爛漫 -Flowers-": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1597,
       "RADAR": {
         "NOTES": 147.02
       }
@@ -3489,7 +3383,7 @@
   },
   "Vitrum": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1848,
       "RADAR": {
         "NOTES": 146.95
       }
@@ -3497,7 +3391,7 @@
   },
   "Ypsilon": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1801,
       "RADAR": {
         "NOTES": 146.24
       }
@@ -3505,7 +3399,7 @@
   },
   "Flying Castle": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1877,
       "RADAR": {
         "NOTES": 146.22
       }
@@ -3513,7 +3407,7 @@
   },
   "HARD BRAIN": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1914,
       "RADAR": {
         "NOTES": 146.01
       }
@@ -3521,7 +3415,7 @@
   },
   "ORCA": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1795,
       "RADAR": {
         "NOTES": 145.71
       }
@@ -3529,7 +3423,7 @@
   },
   "SYNC-ANTHEM": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1865,
       "RADAR": {
         "NOTES": 145.44
       }
@@ -3537,7 +3431,7 @@
   },
   "Push on Beats!〜音ゲの国のeX-ストリーマー〜": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1748,
       "RADAR": {
         "NOTES": 145.26
       }
@@ -3545,7 +3439,7 @@
   },
   "The Rebellion of Sequencer": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1634,
       "RADAR": {
         "NOTES": 145.24
       }
@@ -3553,7 +3447,7 @@
   },
   "HAERETICUS": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1589,
       "RADAR": {
         "NOTES": 145.18
       }
@@ -3561,23 +3455,15 @@
   },
   "No Border": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1895,
       "RADAR": {
         "NOTES": 145.14
       }
     }
   },
-  "デモーニッシュ": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 144.84
-      }
-    }
-  },
   "The Last Apocalypse": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1903,
       "RADAR": {
         "NOTES": 144.8
       }
@@ -3585,7 +3471,7 @@
   },
   "GRAVITON": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1762,
       "RADAR": {
         "NOTES": 144.74
       }
@@ -3593,7 +3479,7 @@
   },
   "The Least 100sec": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1505,
       "RADAR": {
         "NOTES": 144.71
       }
@@ -3601,7 +3487,7 @@
   },
   "ANCHOR": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1835,
       "RADAR": {
         "NOTES": 144.69
       }
@@ -3609,7 +3495,7 @@
   },
   "Godspeed": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1631,
       "RADAR": {
         "NOTES": 144.65
       }
@@ -3617,7 +3503,7 @@
   },
   "KILL EACH OTHER": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1945,
       "RADAR": {
         "NOTES": 144.63
       }
@@ -3625,7 +3511,7 @@
   },
   "Hat Surprise (Season 2)": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1729,
       "RADAR": {
         "NOTES": 144.46
       }
@@ -3633,7 +3519,7 @@
   },
   "DORNWALD 〜Junge〜": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1903,
       "RADAR": {
         "NOTES": 144.37
       }
@@ -3641,7 +3527,7 @@
   },
   "GOLDEN CROSS": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1765,
       "RADAR": {
         "NOTES": 144.19
       }
@@ -3649,21 +3535,15 @@
   },
   "Burning Flame": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1938,
       "RADAR": {
         "NOTES": 144.05
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.41
       }
     }
   },
   "BLAZING_LAZER": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1752,
       "RADAR": {
         "NOTES": 143.89
       }
@@ -3671,7 +3551,7 @@
   },
   "君のハートにロックオン": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1828,
       "RADAR": {
         "NOTES": 143.81
       }
@@ -3679,7 +3559,7 @@
   },
   "Illusionary Waterlily": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1803,
       "RADAR": {
         "NOTES": 143.71
       }
@@ -3687,7 +3567,7 @@
   },
   "DEADHEAT": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1721,
       "RADAR": {
         "NOTES": 143.47
       }
@@ -3695,7 +3575,7 @@
   },
   "Monopole.": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1729,
       "RADAR": {
         "NOTES": 143.41
       }
@@ -3703,21 +3583,15 @@
   },
   "invoker": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1851,
       "RADAR": {
         "NOTES": 143.15
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.6
       }
     }
   },
   "子供の落書き帳": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1395,
       "RADAR": {
         "NOTES": 143.1
       }
@@ -3725,7 +3599,7 @@
   },
   "COSMIC RAY": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1509,
       "RADAR": {
         "NOTES": 143.1
       }
@@ -3733,223 +3607,23 @@
   },
   "spiral galaxy": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1910,
       "RADAR": {
         "NOTES": 143.08
       }
     }
   },
-  "COSMIC V3LOCITY": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 143.04
-      }
-    }
-  },
-  "NITROUS CANNON": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 143.01
-      }
-    }
-  },
-  "RED ZONE": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 142.63
-      }
-    }
-  },
-  "Boomy and The Boost": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 142.62
-      }
-    }
-  },
-  "CUE CUE RESCUE": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 142.59
-      }
-    }
-  },
-  "Dans la nuit de l'éternité": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 142.52
-      }
-    }
-  },
-  "LASER CRUSTER (IGNITE REMIX)": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 142.47
-      }
-    }
-  },
-  "キャトられ♥恋はモ〜モク": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 142.45
-      }
-    }
-  },
-  "MAXIMUM CHEAT GIRL": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 142.35
-      }
-    }
-  },
   "Candy Galy": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1798,
       "RADAR": {
         "NOTES": 142.27
       }
     }
   },
-  "THANK YOU FOR PLAYING": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 142.25
-      }
-    }
-  },
-  "シムルグの目醒め": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 142.13
-      }
-    }
-  },
-  "華麗なる大犬円舞曲": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 141.82
-      }
-    }
-  },
-  "Valanga": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 141.8
-      }
-    }
-  },
-  "kors k's How to make OTOGE CORE 「LONG」": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 141.75
-      }
-    }
-  },
-  "dAuntl3ss": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 141.7
-      }
-    }
-  },
-  "RAIN": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 141.63
-      }
-    }
-  },
-  "旋律のドグマ〜Misérables〜": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 141.46
-      }
-    }
-  },
-  "ピアノ協奏曲第1番\"蠍火\" (BlackY Remix)": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 141.44
-      }
-    }
-  },
-  "Dr. Chemical & Killing Machine": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 141.25
-      }
-    }
-  },
-  "Angel's Ladder": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 140.72
-      }
-    }
-  },
-  "Lightspeed": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 140.7
-      }
-    }
-  },
-  "黒髪乱れし修羅となりて": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 140.69
-      }
-    }
-  },
-  "RINИE": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 140.58
-      }
-    }
-  },
-  "LOST TECHNOLOGIE": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 140.54
-      }
-    }
-  },
-  "Empire of Fury": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 140.25
-      }
-    }
-  },
   "童話回廊": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1592,
       "RADAR": {
         "NOTES": 140.23
       }
@@ -3957,2133 +3631,47 @@
   },
   "#MAGiCVLGiRL_TRVP_B3VTZ": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1753,
       "RADAR": {
         "NOTES": 140.18
       }
     }
   },
-  "#CMFLG": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 140.09
-      }
-    }
-  },
-  "SPECIAL SUMMER CAMPAIGN!": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 139.94
-      }
-    }
-  },
-  "Grand Chariot": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 139.88
-      }
-    }
-  },
-  "Flashes": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 139.8
-      }
-    }
-  },
-  "u gotta beat": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 139.78
-      }
-    }
-  },
-  "Viridian": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 139.75
-      }
-    }
-  },
-  "ABSOLUTE EVIL": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 139.67
-      }
-    }
-  },
-  "DRUNK MONKY": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 139.42
-      }
-    }
-  },
-  "紫陽花 -AZISAI-": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 139.29
-      }
-    }
-  },
-  "天邪鬼": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 139.22
-      }
-    }
-  },
-  "狂イ咲ケ焔ノ華": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 139.11
-      }
-    }
-  },
-  "Liberation": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 138.97
-      }
-    }
-  },
-  "SpaceLand☆TOYBOX": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 138.78
-      }
-    }
-  },
-  "Smalt #28598F": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 138.64
-      }
-    }
-  },
-  "POODLE": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 138.38
-      }
-    }
-  },
-  "CHAOTIC SUNBIRD": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 138.33
-      }
-    }
-  },
-  "True Blue": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 138.21
-      }
-    }
-  },
-  "BIGWAVERS": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 138.14
-      }
-    }
-  },
-  "トリカゴノ鳳凰": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 138.05
-      }
-    }
-  },
-  "QUANTUM TELEPORTATION": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 138.02
-      }
-    }
-  },
-  "Super Freak": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 137.79
-      }
-    }
-  },
-  "anthracene": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 137.57
-      }
-    }
-  },
-  "駅猫のワルツ": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 137.52
-      }
-    }
-  },
-  "Ōu Legends": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 137.1
-      }
-    }
-  },
-  "Slipstream": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 137.09
-      }
-    }
-  },
-  "Devil's Gear": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 136.98
-      }
-    }
-  },
-  "EX-MASSIVE FIGHTER": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 136.78
-      }
-    }
-  },
-  "Amazing Mirage": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 136.69
-      }
-    }
-  },
-  "ZZ": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 136.52
-      }
-    }
-  },
-  "Chaotoxin": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 136.46
-      }
-    }
-  },
-  "T-REX vs Velociraptor (In the Far east euphoria)": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 136.39
-      }
-    }
-  },
-  "量子の海のリントヴルム": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 136.21
-      }
-    }
-  },
-  "LASER CRUSTER": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 136.11
-      }
-    }
-  },
-  "イザナミノナゲキ": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 136.07
-      }
-    }
-  },
-  "Bad Maniacs": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.99
-      }
-    }
-  },
-  "SOLID STATE SQUAD": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.96
-      }
-    },
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.4
-      }
-    }
-  },
-  "Little Star": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.81
-      }
-    }
-  },
-  "24h Endurance Race": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.76
-      }
-    }
-  },
-  "Matt Silver": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.75
-      }
-    }
-  },
-  "Raspberry Railgun": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.74
-      }
-    }
-  },
-  "TIEFSEE": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.73
-      }
-    }
-  },
-  "夏色DIARY - L.E.D.-G STYLE MIX -": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.62
-      }
-    }
-  },
-  "Be OK": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.48
-      }
-    }
-  },
-  "Antigravity": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.48
-      }
-    }
-  },
-  "INSOMNIA": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.45
-      }
-    }
-  },
-  "スーパー戦湯ババンバーン": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.42
-      }
-    }
-  },
-  "Inferno of Fomalhaut": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.37
-      }
-    }
-  },
   "シル・ヴ・プレジデント": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1299,
       "RADAR": {
         "NOTES": 135.35
       }
     }
   },
-  "V2": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.26
-      }
-    },
-    "HYPER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.06
-      }
-    }
-  },
-  "廿": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.22
-      }
-    }
-  },
-  "電人、暁に斃れる。": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.2
-      }
-    }
-  },
-  "めいさいアイドル☆あいむちゃん♪": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.2
-      }
-    }
-  },
-  "NEO GENERATOR SEVEN": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 135.11
-      }
-    }
-  },
-  "Gravigazer": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 134.96
-      }
-    }
-  },
-  "Bring The Fire": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 134.92
-      }
-    }
-  },
-  "reunion": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 134.82
-      }
-    }
-  },
-  "不沈艦CANDY": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 134.58
-      }
-    }
-  },
-  "ハイテックトキオ": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 134.56
-      }
-    }
-  },
-  "BLUE MIRAGE": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 134.38
-      }
-    }
-  },
-  "少年は空を辿る": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 134.3
-      }
-    }
-  },
-  "龍と少女とデコヒーレンス": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 134.25
-      }
-    }
-  },
-  "Always We Trust In You": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 134.17
-      }
-    }
-  },
-  "Fegrix": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 134
-      }
-    }
-  },
-  "ÆTHER": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.99
-      }
-    }
-  },
-  "sakura storm": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.92
-      }
-    }
-  },
-  "九尾狐夜行": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.72
-      }
-    }
-  },
-  "AO-1": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.66
-      }
-    }
-  },
-  "532nm": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.62
-      }
-    }
-  },
-  "Trill auf G": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.61
-      }
-    }
-  },
-  "紅牡丹": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.55
-      }
-    }
-  },
-  "HYPE THE CORE": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.43
-      }
-    }
-  },
-  "On the FM": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.26
-      }
-    }
-  },
-  "錬成人間トリコロイダー": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 133.18
-      }
-    }
-  },
-  "Lethal Weapon": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.99
-      }
-    }
-  },
-  "encounter": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.98
-      }
-    }
-  },
-  "金野火織の金色提言": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.96
-      }
-    }
-  },
-  "FANTASTIC THREE": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.92
-      }
-    }
-  },
-  "No.13": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.84
-      }
-    }
-  },
-  "Mukade": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.72
-      }
-    }
-  },
-  "OTENAMI Hurricane": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.69
-      }
-    }
-  },
-  "DropZ-Line-": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.66
-      }
-    }
-  },
-  "CODE:1 [revision1.0.1]": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.64
-      }
-    }
-  },
-  "PARANOiA 〜HADES〜": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.52
-      }
-    }
-  },
-  "GAIA": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.52
-      }
-    }
-  },
-  "ra'am": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.5
-      }
-    }
-  },
-  "Rave Patroller": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.49
-      }
-    }
-  },
-  "COSMIC CYBER": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.48
-      }
-    }
-  },
-  "Symmetry": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.3
-      }
-    }
-  },
-  "Rave Cannon": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 132.26
-      }
-    }
-  },
-  "L.F.O": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.96
-      }
-    }
-  },
-  "dica dica": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.93
-      }
-    }
-  },
-  "Chronos": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.85
-      }
-    }
-  },
-  "Skreaming for Salvation": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.78
-      }
-    }
-  },
-  "Vinculum stellarum": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.64
-      }
-    }
-  },
-  "Idola": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.52
-      }
-    }
-  },
-  "Apocalypse": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.47
-      }
-    }
-  },
-  "ALBIDA": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.4
-      }
-    }
-  },
   "EDEN": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1637,
       "RADAR": {
         "NOTES": 131.28
       }
     }
   },
-  "Battle Train -IIDX Edition-": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.26
-      }
-    }
-  },
-  "Welcome": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.25
-      }
-    }
-  },
-  "Please Welcome Mr.C": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.2
-      }
-    }
-  },
-  "Evans": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.11
-      }
-    }
-  },
-  "neu": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.05
-      }
-    }
-  },
-  "I will be back -オレは帰ってきた-": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 131.03
-      }
-    }
-  },
-  "XENON II 〜TOMOYUKIの野望〜": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 130.97
-      }
-    }
-  },
-  "& Intelligence": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 130.95
-      }
-    }
-  },
-  "MAX 360": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 130.8
-      }
-    }
-  },
-  "刃図羅": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 130.75
-      }
-    }
-  },
-  "destination": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 130.52
-      }
-    }
-  },
-  "Cookie Bouquets": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 130.49
-      }
-    }
-  },
-  "Last Dance": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 130.46
-      }
-    }
-  },
-  "New Decade IIDX Edition": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 130.3
-      }
-    }
-  },
-  "The Sampling Paradise": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 130.12
-      }
-    }
-  },
-  "Sol Cosine Job 2": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.89
-      }
-    }
-  },
-  "DOMINION": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.69
-      }
-    }
-  },
-  "Journey": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.63
-      }
-    }
-  },
-  "魅惑のYUMMYスイーツ": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.59
-      }
-    }
-  },
-  "Carry Me Away": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.56
-      }
-    }
-  },
-  "惑星☆ロリポップ": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.36
-      }
-    }
-  },
-  "NINJA IS DEAD IIDX ver.": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.2
-      }
-    }
-  },
-  "Friction[!]Function": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.2
-      }
-    }
-  },
-  "ZEИITH": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 129.16
-      }
-    }
-  },
-  "ALBA -黎明-": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.97
-      }
-    }
-  },
-  "One More Lovely": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.95
-      }
-    }
-  },
-  "NNRT": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.85
-      }
-    }
-  },
-  "VEGA": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.74
-      }
-    }
-  },
-  "One for All": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.72
-      }
-    }
-  },
-  "Xperanza": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.6
-      }
-    }
-  },
-  "Cosmic Cat": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.47
-      }
-    }
-  },
-  "Todestrieb": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.4
-      }
-    }
-  },
-  "Summerlights(IIDX Edition)": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.36
-      }
-    }
-  },
-  "アストライアの双皿": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.32
-      }
-    }
-  },
-  "SOLID STATE SQUAD -RISEN RELIC REMIX-": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 128.17
-      }
-    }
-  },
-  "追想快晴テーマパーク": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.93
-      }
-    }
-  },
-  "Out of Control": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.79
-      }
-    }
-  },
-  "THE CANNONBALLER": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.77
-      }
-    }
-  },
-  "bloomin' feeling": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.73
-      }
-    }
-  },
-  "Speculation": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.68
-      }
-    }
-  },
-  "Critical Crystal": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.64
-      }
-    }
-  },
-  "Sword of Vengeance": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.45
-      }
-    }
-  },
-  "Steel Edge": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.45
-      }
-    }
-  },
-  "RUGGED ASH": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.42
-      }
-    }
-  },
-  "UMMU": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.36
-      }
-    }
-  },
-  "Sounds Of Summer": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.24
-      }
-    }
-  },
-  "Purple Perplex": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.23
-      }
-    }
-  },
-  "Mächö Mönky": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.2
-      }
-    }
-  },
-  "Garuda": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.17
-      }
-    }
-  },
-  "Vulkan": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 127.12
-      }
-    }
-  },
-  "東京神話": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.96
-      }
-    }
-  },
-  "ワルツ第17番 ト短調\"大犬のワルツ\"": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.92
-      }
-    }
-  },
-  "cinder": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.84
-      }
-    }
-  },
-  "HADES": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.71
-      }
-    }
-  },
-  "Ambush Ace": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.71
-      }
-    }
-  },
-  "ウツシミウツシ": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.7
-      }
-    }
-  },
-  "STULTI": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.67
-      }
-    }
-  },
-  "ぐだふわエブリデー": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.58
-      }
-    }
-  },
-  "snow storm": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.54
-      }
-    }
-  },
-  "Proof of the existence": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.43
-      }
-    }
-  },
-  "Ergosphere": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.27
-      }
-    }
-  },
   "MAD ATTACK": {
     "LEGGENDARIA": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1396,
       "RADAR": {
-        "NOTES": 126.26
-      }
-    }
-  },
-  "xenon": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.25
-      }
-    }
-  },
-  "Primitive Vibes": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.09
-      }
-    }
-  },
-  "Venom": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.06
-      }
-    }
-  },
-  "Megalara Garuda": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.06
-      }
-    }
-  },
-  "Stylus": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 126.05
-      }
-    }
-  },
-  "LAST DAY": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.91
-      }
-    }
-  },
-  "UNDERWORLD HOLOGRAPHY": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.88
-      }
-    }
-  },
-  "パラドキシカル・タイムリープトライアル(Short Ver.)": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.8
-      }
-    }
-  },
-  "グッバイ宣言": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.73
-      }
-    }
-  },
-  "WISE UP!": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.65
-      }
-    }
-  },
-  "glacia": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.62
-      }
-    }
-  },
-  "ONE AND ONLY": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.6
-      }
-    }
-  },
-  "Echoes of Sunfall": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.58
-      }
-    }
-  },
-  "儚き恋の華": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.31
-      }
-    }
-  },
-  "ONIGOROSHI": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.27
-      }
-    }
-  },
-  "TECHNO Style Essentials": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.22
-      }
-    }
-  },
-  "Meissa": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.16
-      }
-    }
-  },
-  "The Onlyonez": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 125.08
-      }
-    }
-  },
-  "ILAYZA": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.98
-      }
-    }
-  },
-  "凛として咲く花の如く": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.95
-      }
-    }
-  },
-  "無意識のフィロソフィア": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.93
-      }
-    }
-  },
-  "ちょえちょえまぎか": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.91
-      }
-    }
-  },
-  "Invitation from Mr.C": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.83
-      }
-    }
-  },
-  "3!dolon Forc3": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.81
-      }
-    }
-  },
-  "M4K3 1T B0UNC3": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.65
-      }
-    }
-  },
-  "Marie Antoinette": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.5
-      }
-    }
-  },
-  "CONNECT-": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.49
-      }
-    }
-  },
-  "打打打打打打打打打打": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.38
-      }
-    }
-  },
-  "デッドボヲルdeホームラン": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.35
-      }
-    }
-  },
-  "State Of The Art": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.35
-      }
-    }
-  },
-  "MAGIC & LOVE": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.35
-      }
-    }
-  },
-  "TROOPERS": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.33
-      }
-    }
-  },
-  "You'll say \"Now!\"": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.3
-      }
-    }
-  },
-  "THE SHINING POLARIS(kors k mix)": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.28
+        "SCRATCH": 183.1
       }
     }
   },
   "The Dirty of Loudness": {
     "ANOTHER": {
-      "ALL_NOTES": 0,
+      "ALL_NOTES": 1327,
       "RADAR": {
-        "NOTES": 124.26
+        "PEAK": 148.69
       }
-    }
-  },
-  "Light and Cyber･･･": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
+    },
+    "HYPER": {
+      "ALL_NOTES": 1154,
       "RADAR": {
-        "NOTES": 124.19
-      }
-    }
-  },
-  "UNITE THE HEART": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.18
-      }
-    }
-  },
-  "Night! Night! Night!": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.13
-      }
-    }
-  },
-  "THE FALLEN": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 124.01
-      }
-    }
-  },
-  "オドループ": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.99
-      }
-    }
-  },
-  "Sense 2007": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.95
-      }
-    }
-  },
-  "Caterpillar": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.89
-      }
-    }
-  },
-  "Banger Banger Banger Banger": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.61
-      }
-    }
-  },
-  "Wanna Party?": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.58
-      }
-    }
-  },
-  "≡+≡": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.52
-      }
-    }
-  },
-  "MAXIVCORD": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.45
-      }
-    }
-  },
-  "Buffalo": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.44
-      }
-    }
-  },
-  "Persephone": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.34
-      }
-    }
-  },
-  "Rock It": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.27
-      }
-    }
-  },
-  "Never Fade Away": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.25
-      }
-    }
-  },
-  "Arca": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.23
-      }
-    }
-  },
-  "1st Samurai": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.21
-      }
-    }
-  },
-  "Castle on the Moon": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.14
-      }
-    }
-  },
-  "POLꞰAMAИIA": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.13
-      }
-    }
-  },
-  "AIR RAID FROM THA UNDAGROUND": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.07
-      }
-    }
-  },
-  "GENOCIDE": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.05
-      }
-    }
-  },
-  "DESIRE": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.05
-      }
-    }
-  },
-  "冬椿 ft. Kanae Asaba": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 123.03
-      }
-    }
-  },
-  "終焔のClaudia": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.9
-      }
-    }
-  },
-  "Take My Life": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.9
-      }
-    }
-  },
-  "《GRANDMASTER》": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.88
-      }
-    }
-  },
-  "Xyndrome": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.76
-      }
-    }
-  },
-  "Xepher": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.75
-      }
-    }
-  },
-  "Scarlet Moon": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.69
-      }
-    }
-  },
-  "Snow Goose": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.6
-      }
-    }
-  },
-  "Be a Hero!": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.32
-      }
-    }
-  },
-  "Hollywood Galaxy": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.27
-      }
-    }
-  },
-  "smooooch・∀・": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.15
-      }
-    }
-  },
-  "Sweet Clapper": {
-    "LEGGENDARIA": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.07
-      }
-    }
-  },
-  "GOLD RUSH": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.07
-      }
-    }
-  },
-  "Rosa azuL": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.06
-      }
-    }
-  },
-  "ACTØ": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 122.02
-      }
-    }
-  },
-  "Moving on": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.83
-      }
-    }
-  },
-  "SOUND OF GIALLARHORN": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.72
-      }
-    }
-  },
-  "たまゆら": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.71
-      }
-    }
-  },
-  "CODE -CRiMSON-": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.67
-      }
-    }
-  },
-  "ミュージック・アワー": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.65
-      }
-    }
-  },
-  "Nightmare before oversleep": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.59
-      }
-    }
-  },
-  "Highcharge Divolt": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.55
-      }
-    }
-  },
-  "Broken": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.53
-      }
-    }
-  },
-  "STRAIGHT TO THE STARS": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.51
-      }
-    }
-  },
-  "Time Distortion pt.2(IIDX Edit)": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.49
-      }
-    }
-  },
-  "Modular Technology": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.38
-      }
-    }
-  },
-  "Bow shock!!": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.33
-      }
-    }
-  },
-  "Jungle Eater": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.31
-      }
-    }
-  },
-  "Ritual of Anubis": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.29
-      }
-    }
-  },
-  "Danza Aestas": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.27
-      }
-    }
-  },
-  "Swing My Wonderland": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.14
-      }
-    }
-  },
-  "創世ノート": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.11
-      }
-    }
-  },
-  "Crazy Jackpot": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 121.06
-      }
-    }
-  },
-  "IMPLANTATION": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.86
-      }
-    }
-  },
-  "GloriosA": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.85
-      }
-    }
-  },
-  "夢縁": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.79
-      }
-    }
-  },
-  "Red Soul": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.71
-      }
-    }
-  },
-  "Romanticが止まらない": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.61
-      }
-    }
-  },
-  "3V0": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.59
-      }
-    }
-  },
-  "Tail Lights": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.55
-      }
-    }
-  },
-  "MINT": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.52
-      }
-    }
-  },
-  "Afterimage d'automne": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.38
-      }
-    }
-  },
-  "SAY BAY": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.35
-      }
-    }
-  },
-  "I'm so Happy": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.22
-      }
-    }
-  },
-  "夕焼け 〜Fading Day〜": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.15
-      }
-    }
-  },
-  "crew": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.14
-      }
-    }
-  },
-  "Nocturnal 2097": {
-    "ANOTHER": {
-      "ALL_NOTES": 0,
-      "RADAR": {
-        "NOTES": 120.06
+        "PEAK": 144.73
       }
     }
   },
