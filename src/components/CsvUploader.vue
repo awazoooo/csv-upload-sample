@@ -1,43 +1,78 @@
 <template>
   <div class="csv-uploader">
-    <div
-      class="upload-area"
-      :class="{ 'is-dragging': isDragging }"
-      @dragover.prevent="isDragging = true"
-      @dragleave.prevent="isDragging = false"
-      @drop.prevent="handleFileDrop"
-    >
-      <div class="upload-icon">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-          <polyline points="17 8 12 3 7 8"></polyline>
-          <line x1="12" y1="3" x2="12" y2="15"></line>
-        </svg>
+    <div class="input-tabs">
+      <button
+        class="tab-button"
+        :class="{ active: inputMethod === 'file' }"
+        @click="inputMethod = 'file'"
+      >
+        ファイル入力
+      </button>
+      <button
+        class="tab-button"
+        :class="{ active: inputMethod === 'text' }"
+        @click="inputMethod = 'text'"
+      >
+        テキスト入力
+      </button>
+    </div>
+
+    <!-- ファイルアップロード -->
+    <div v-if="inputMethod === 'file'" class="input-container">
+      <div
+        class="upload-area"
+        :class="{ 'is-dragging': isDragging }"
+        @dragover.prevent="isDragging = true"
+        @dragleave.prevent="isDragging = false"
+        @drop.prevent="handleFileDrop"
+      >
+        <div class="upload-icon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="17 8 12 3 7 8"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15"></line>
+          </svg>
+        </div>
+        <div class="upload-text">
+          <p>CSVファイルをドラッグ＆ドロップ</p>
+          <p>または</p>
+        </div>
+        <label for="csvInput" class="file-input-label">
+          <span>ファイルを選択</span>
+          <input
+            type="file"
+            id="csvInput"
+            accept=".csv"
+            @change="handleFileUpload"
+            class="file-input"
+          />
+        </label>
       </div>
-      <div class="upload-text">
-        <p>CSVファイルをドラッグ＆ドロップ</p>
-        <p>または</p>
+    </div>
+
+    <!-- テキスト入力 -->
+    <div v-else class="input-container">
+      <div class="text-input-area">
+        <textarea
+          v-model="csvText"
+          placeholder="CSVデータをここにペーストしてください..."
+          class="csv-textarea"
+          rows="10"
+        ></textarea>
+        <button class="process-button" @click="handleTextInput" :disabled="!csvText.trim()">
+          データを処理
+        </button>
       </div>
-      <label for="csvInput" class="file-input-label">
-        <span>ファイルを選択</span>
-        <input
-          type="file"
-          id="csvInput"
-          accept=".csv"
-          @change="handleFileUpload"
-          class="file-input"
-        />
-      </label>
     </div>
     <div v-if="isLoading" class="loading-container">
       <div class="loading-spinner"></div>
@@ -59,6 +94,8 @@ import type {
 
 const isLoading = ref(false)
 const isDragging = ref(false)
+const inputMethod = ref('file') // 'file' または 'text'
+const csvText = ref('')
 
 const emit = defineEmits<{
   (e: 'data-processed', candidates: CandidatesData, averageValues: RadarAverageValues): void
@@ -106,6 +143,25 @@ const handleFileUpload = (event: Event) => {
   parseCSV(file)
 }
 
+// テキスト入力からのCSV処理
+const handleTextInput = () => {
+  if (!csvText.value.trim()) return
+
+  isLoading.value = true
+
+  Papa.parse(csvText.value, {
+    header: true,
+    complete: (results) => {
+      processData(results.data as CSVRow[])
+      isLoading.value = false
+    },
+    error: (error: Error) => {
+      console.error('CSVパースエラー:', error)
+      isLoading.value = false
+    },
+  })
+}
+
 // CSVファイルのパース処理
 const parseCSV = (file: File) => {
   isLoading.value = true
@@ -116,7 +172,7 @@ const parseCSV = (file: File) => {
       processData(results.data as CSVRow[])
       isLoading.value = false
     },
-    error: (error) => {
+    error: (error: Error) => {
       console.error('CSVパースエラー:', error)
       isLoading.value = false
     },
@@ -334,5 +390,97 @@ const processData = (data: CSVRow[]) => {
   border-top-color: #4a6cf7;
   animation: spin 1s linear infinite;
   margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* タブ切り替え */
+.input-tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button {
+  padding: 12px 20px;
+  background: #f0f0f0;
+  border: none;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 150px;
+}
+
+.tab-button:hover {
+  background: #e0e0e0;
+}
+
+.tab-button.active {
+  background: #4a6cf7;
+  color: white;
+}
+
+/* テキスト入力エリア */
+.input-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.text-input-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.csv-textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  transition: border-color 0.3s;
+}
+
+.csv-textarea:focus {
+  outline: none;
+  border-color: #4a6cf7;
+  box-shadow: 0 0 0 2px rgba(74, 108, 247, 0.2);
+}
+
+.process-button {
+  padding: 12px 24px;
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  align-self: center;
+  box-shadow: 0 4px 6px rgba(74, 108, 247, 0.2);
+}
+
+.process-button:hover:not(:disabled) {
+  background: #3a5ce5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(74, 108, 247, 0.25);
+}
+
+.process-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
 }
 </style>
