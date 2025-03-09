@@ -5,7 +5,7 @@
       <p class="subtitle">IIDX ノーツレーダー値確認ツール</p>
     </div>
 
-    <CsvUploader @data-processed="handleDataProcessed" />
+    <CsvUploader v-if="!hasData" @data-processed="handleDataProcessed" />
 
     <div class="data-section" v-if="hasData">
       <TabSelector v-model="currentTab" :tabs="Object.keys(candidates)" />
