@@ -270,12 +270,12 @@ const processData = (data: CSVRow[]) => {
 
   // 平均値を保存するオブジェクト
   const averageValues: RadarAverageValues = {
-    NOTES: '0',
-    CHORD: '0',
-    PEAK: '0',
-    CHARGE: '0',
-    SCRATCH: '0',
-    'SOF-RAN': '0',
+    NOTES: 0.0,
+    CHORD: 0.0,
+    PEAK: 0.0,
+    CHARGE: 0.0,
+    SCRATCH: 0.0,
+    'SOF-RAN': 0.0,
   }
 
   // 各種別ごとにレーダー値の降順でソート
@@ -291,7 +291,7 @@ const processData = (data: CSVRow[]) => {
 
     if (topTen.length > 0) {
       const avgValue = topTen.reduce((sum, item) => sum + parseFloat(item.value), 0) / topTen.length
-      averageValues[kindKey] = avgValue.toFixed(2)
+      averageValues[kindKey] = parseFloat(avgValue.toFixed(2))
 
       // 上位10曲にフラグを設定
       topTen.forEach((item) => {

@@ -82,12 +82,12 @@ const candidates = ref<CandidatesData>({
 
 // レーダー平均値
 const averageValues = ref<RadarAverageValues>({
-  NOTES: '0',
-  CHORD: '0',
-  PEAK: '0',
-  CHARGE: '0',
-  SCRATCH: '0',
-  'SOF-RAN': '0',
+  NOTES: 0.0,
+  CHORD: 0.0,
+  PEAK: 0.0,
+  CHARGE: 0.0,
+  SCRATCH: 0.0,
+  'SOF-RAN': 0.0,
 })
 
 // 現在選択されているタブ

@@ -1,6 +1,8 @@
 export interface MusicData {
   difficulty: string
   difficultyNumber: number
+  isExcluded?: boolean
+  isTopTen?: boolean
   maxScore: number
   name: string
   rank: string
@@ -8,43 +10,22 @@ export interface MusicData {
   scoreRate: string
   totalNotes?: number
   value: string
-  isExcluded?: boolean
-  isTopTen?: boolean
 }
+
+export type RadarKinds = 'NOTES' | 'CHORD' | 'PEAK' | 'CHARGE' | 'SCRATCH' | 'SOF-RAN'
 
 export interface MusicMasterData {
   [musicName: string]: {
     [difficulty: string]: {
       ALL_NOTES: number
-      RADAR: {
-        NOTES?: number
-        CHORD?: number
-        PEAK?: number
-        CHARGE?: number
-        SCRATCH?: number
-        'SOF-RAN'?: number
-      }
+      RADAR: Record<RadarKinds, number>
     }
   }
 }
 
-export interface CandidatesData {
-  NOTES: MusicData[]
-  CHORD: MusicData[]
-  PEAK: MusicData[]
-  CHARGE: MusicData[]
-  SCRATCH: MusicData[]
-  'SOF-RAN': MusicData[]
-}
+export type CandidatesData = Record<RadarKinds, MusicData[]>
 
-export interface RadarAverageValues {
-  NOTES: string
-  CHORD: string
-  PEAK: string
-  CHARGE: string
-  SCRATCH: string
-  'SOF-RAN': string
-}
+export type RadarAverageValues = Record<RadarKinds, string>
 
 export interface CSVRow {
   バージョン: string
