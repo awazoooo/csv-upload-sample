@@ -25,7 +25,7 @@ export interface MusicMasterData {
 
 export type CandidatesData = Record<RadarKinds, MusicData[]>
 
-export type RadarAverageValues = Record<RadarKinds, string>
+export type RadarAverageValues = Record<RadarKinds, number>
 
 export interface CSVRow {
   バージョン: string

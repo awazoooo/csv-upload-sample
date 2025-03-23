@@ -86,11 +86,14 @@ import { ref } from 'vue'
 import Papa from 'papaparse'
 import type {
   CSVRow,
-  MusicMasterData,
   CandidatesData,
   MusicData,
+  MusicMasterData,
   RadarAverageValues,
 } from '@/types'
+
+const MASTER_DATA_URL =
+  'https://raw.githubusercontent.com/awazoooo/csv-upload-sample/refs/heads/main/public/radar.json'
 
 const isLoading = ref(false)
 const isDragging = ref(false)
@@ -107,9 +110,7 @@ const musicMasterData = ref<MusicMasterData>({})
 // マスターデータの取得
 const fetchMasterData = async () => {
   try {
-    const response = await fetch(
-      'https://raw.githubusercontent.com/awazoooo/csv-upload-sample/refs/heads/main/public/radar.json',
-    )
+    const response = await fetch(MASTER_DATA_URL)
     if (!response.ok) {
       throw new Error('HTTPエラー: ' + response.status)
     }
