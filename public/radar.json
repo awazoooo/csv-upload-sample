@@ -3691,5 +3691,13 @@
         "CHORD": 165.82
       }
     }
+  },
+  "CALL": {
+    "LEGGENDARIA": {
+      "ALL_NOTES": 1371,
+      "RADAR": {
+        "CHARGE": 180.18
+      }
+    }
   }
 }
